@@ -1,0 +1,624 @@
+/* Start of Variables */
+:root {
+  --main-color: #e65f78;
+}
+/* End of Variables */
+
+/* Start global value */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+* {
+  scroll-behavior: smooth;
+}
+html {
+  scroll-padding-top: 57px;
+}
+/* End global value */
+
+/* Start of fixed section */
+.fixed-btns .gear {
+  position: fixed;
+  left: 0;
+  top: 30%;
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  border-radius: 0px 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+/* End of header section */
+
+/* Start of header section */
+#header {
+  background-image: url(../Images/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 5;
+}
+.overlay-bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-content {
+  text-align: center;
+  color: #ffffff;
+}
+.header-content h3 {
+  font-size: 1.5rem;
+}
+.header-content h1 {
+  font-size: 3.375rem;
+  font-weight: 700;
+  line-height: 4.0625rem;
+}
+.header-content p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 17px;
+}
+@media (max-width: 991px) {
+  #header h1 {
+    font-size: 30px;
+  }
+  #header p {
+    font-size: 15px;
+  }
+}
+.header-content h1::after {
+  content: "|";
+  animation: typing;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  padding-left: 20px;
+}
+@keyframes typing {
+  0% {
+    content: "K |";
+  }
+  1% {
+    content: "Ke |";
+  }
+  2% {
+    content: "Ker |";
+  }
+  3% {
+    content: "Kerr |";
+  }
+  4% {
+    content: "Kerri |";
+  }
+  5% {
+    content: "Kerri D |";
+  }
+  6% {
+    content: "Kerri De |";
+  }
+  7% {
+    content: "Kerri Deo |";
+  }
+  8% {
+    content: "Kerri Deo. |";
+  }
+  9% {
+    content: "Kerri Deo |";
+  }
+  10% {
+    content: "Kerri De |";
+  }
+  11% {
+    content: "Kerri D |";
+  }
+  12% {
+    content: "Kerri |";
+  }
+  13% {
+    content: "Kerr |";
+  }
+  14% {
+    content: "Ker |";
+  }
+  15% {
+    content: "Ke |";
+  }
+  16% {
+    content: "K |";
+  }
+  17% {
+    content: "A |";
+  }
+  18% {
+    content: "A P |";
+  }
+  19% {
+    content: "A Ph |";
+  }
+  20% {
+    content: "A Pho |";
+  }
+  21% {
+    content: "A Phot |";
+  }
+  22% {
+    content: "A Photo |";
+  }
+  23% {
+    content: "A Photog |";
+  }
+  24% {
+    content: "A Photogr |";
+  }
+  25% {
+    content: "A Photogra |";
+  }
+  26% {
+    content: "A Photograp |";
+  }
+  27% {
+    content: "A Photograph |";
+  }
+  28% {
+    content: "A Photographe |";
+  }
+  29% {
+    content: "A Photographer |";
+  }
+  30% {
+    content: "A Photographer. |";
+  }
+  31% {
+    content: "A Photographer |";
+  }
+  32% {
+    content: "A Photographe |";
+  }
+  33% {
+    content: "A Photograph |";
+  }
+  34% {
+    content: "A Photograp |";
+  }
+  35% {
+    content: "A Photogra |";
+  }
+  36% {
+    content: "A Photogr |";
+  }
+  37% {
+    content: "A Photog |";
+  }
+  38% {
+    content: "A Photo |";
+  }
+  39% {
+    content: "A Phot |";
+  }
+  40% {
+    content: "A Pho |";
+  }
+  41% {
+    content: "A Ph |";
+  }
+  42% {
+    content: "A P |";
+  }
+  43% {
+    content: "A |";
+  }
+  44% {
+    content: "A |";
+  }
+  45% {
+    content: "A G |";
+  }
+  46% {
+    content: "A Gr |";
+  }
+  47% {
+    content: "A Gra |";
+  }
+  48% {
+    content: "A Grap |";
+  }
+  49% {
+    content: "A Graph |";
+  }
+  50% {
+    content: "A Graphi |";
+  }
+  51% {
+    content: "A Graphic |";
+  }
+  52% {
+    content: "A Graphic D |";
+  }
+  53% {
+    content: "A Graphic De |";
+  }
+  54% {
+    content: "A Graphic Des |";
+  }
+  55% {
+    content: "A Graphic Desi |";
+  }
+  56% {
+    content: "A Graphic Desig |";
+  }
+  57% {
+    content: "A Graphic Design |";
+  }
+  58% {
+    content: "A Graphic Designe |";
+  }
+  59% {
+    content: "A Graphic Designer |";
+  }
+  60% {
+    content: "A Graphic Designer. |";
+  }
+  61% {
+    content: "A Graphic Designer |";
+  }
+  62% {
+    content: "A Graphic Designe |";
+  }
+  63% {
+    content: "A Graphic Design |";
+  }
+  64% {
+    content: "A Graphic Desig |";
+  }
+  65% {
+    content: "A Graphic Desi |";
+  }
+  66% {
+    content: "A Graphic Des |";
+  }
+  67% {
+    content: "A Graphic De |";
+  }
+  68% {
+    content: "A Graphic D |";
+  }
+  69% {
+    content: "A Graphic |";
+  }
+  70% {
+    content: "A Graphi |";
+  }
+  71% {
+    content: "A Graph |";
+  }
+  72% {
+    content: "A Grap |";
+  }
+  73% {
+    content: "A Gra |";
+  }
+  74% {
+    content: "A Gr |";
+  }
+  75% {
+    content: "A G |";
+  }
+  76% {
+    content: "A |";
+  }
+  77% {
+    content: "|";
+  }
+}
+.header-content .btn {
+  color: #ffffff;
+  padding: 10px 48px;
+}
+.header-content .btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+#header .bouncing-btn {
+  width: 30px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 20px;
+  transform: translateY(60px);
+  animation: Bouncing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+#header .bouncing-btn::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background-color: white;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+@keyframes Bouncing {
+  0% {
+    transform: translateY(65px);
+  }
+  25% {
+    transform: translateY(90px);
+  }
+  50% {
+    transform: translateY(75px);
+  }
+  75% {
+    transform: translateY(90px);
+  }
+  100% {
+    transform: translateY(65px);
+  }
+}
+/* End of header section */
+
+/* Start of Navbar section */
+.navbar .navbar-nav .nav-link,
+.navbar-brand {
+  color: white;
+  text-transform: uppercase;
+}
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.navbar-toggler-icon {
+  color: #ffffff;
+}
+.navbar-toggler {
+  color: #ffffff;
+}
+.bg-color {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar .navbar-brand .logo {
+  width: 100px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--main-color);
+}
+.navbar .navbar-nav .nav-item .nav-link .special-color {
+  color: var(--main-color);
+}
+/* End of Navbar section */
+
+/* Start of About section */
+#about .text-color {
+  color: var(--main-color);
+}
+#about .social-icons {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #eeeeee;
+  margin-right: 10px;
+  transition: 0.5s alls;
+}
+#about .social-icons a {
+  color: #000000;
+}
+#about .social-icons:hover {
+  border-color: var(--main-color);
+}
+#about .social-icons a:hover {
+  color: var(--main-color);
+}
+@media (max-width: 991px) {
+  #about img {
+    margin-bottom: 10px;
+  }
+}
+/* End of About section */
+
+/* Start of Services section */
+.services {
+  background-color: #f8f9fa;
+}
+#services .services-content {
+  text-align: center;
+}
+#services .services-content .icons {
+  font-size: 50px;
+  color: var(--main-color);
+}
+#services .content-row h5::after {
+  content: "";
+  height: 3px;
+  width: 50px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: all 0.5s;
+}
+#services .content-row :hover::after {
+  width: 100px;
+}
+/* End of Services section */
+
+/* Start of I'm here section */
+#hire .here-content {
+  text-align: center;
+}
+/* End of I'm here section */
+
+/* Start of Client section */
+.client {
+  background-color: #f8f9fa;
+}
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 5px;
+  background-color: var(--main-color);
+}
+
+.carousel-indicators .active {
+  width: 40px;
+}
+/* End of Client section */
+
+/* Start of Our work section */
+.nav-pills .nav-link.active {
+  background-color: var(--main-color);
+}
+
+#portfolio .nav-link:focus,
+#portfolio .nav-link:hover {
+  background-color: var(--main-color);
+}
+
+.nav-pills .nav-link {
+  color: black;
+  margin-right: 10px;
+}
+
+.layer {
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all;
+}
+
+.layer-text {
+  transform: translateY(200px);
+  transition: 0.5s all;
+}
+
+.big-layer img {
+  transition: 0.5s all;
+}
+
+.big-layer:hover img {
+  scale: 1.05;
+}
+
+.big-layer:hover .layer {
+  opacity: 0.8;
+}
+
+.big-layer:hover .layer-text {
+  transform: translateY(0px);
+}
+/* End of Our work section */
+
+/* Start of blog work section */
+.blog {
+  background-color: #f8f9fa;
+}
+.author a {
+  color: var(--main-color);
+}
+/* End of blog work section */
+
+/* Start of Contact section */
+.form-control:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 0.0625rem var(--main-color);
+}
+
+#contact .btn:hover {
+  background-color: var(--main-color);
+}
+#contact .contact-us-icons {
+  color: var(--main-color);
+}
+/* End of Contact section */
+
+/* Start of Footer section */
+.footer {
+  padding: 70px 0px;
+  background-color: #212121 !important;
+}
+.footer .footer-alt p {
+  font-size: 16px;
+}
+.footer .footer-alt ul li a {
+  border-radius: 50%;
+  transition: all 0.5s;
+  background-color: rgba(241, 241, 241, 0.08);
+  width: 44px;
+  height: 44px;
+  display: block;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  color: rgb(123, 120, 120);
+}
+.footer .footer-alt ul li a:hover {
+  color: var(--main-color);
+}
+.copyright_content {
+  color: #ababab;
+}
+.footer-alt li a i {
+  color: #ababab;
+  transition: all 0.5s;
+}
+/* End of Footer section */
+.back-to-top {
+  position: fixed;
+  /* visibility: hidden; */
+  opacity: 1;
+  right: 15px;
+  bottom: 15px;
+  z-index: 3;
+  background-color: var(--main-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #0c0c0c;
+  line-height: 0;
+}
+.arrow-a {
+  color: #ffffff;
+  font-size: 20px;
+}
+.back-to-top:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
